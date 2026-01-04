@@ -13,7 +13,6 @@
 # 0. Load packages
 #########################
 
-# Uncomment this line the first time you run the script to install packages:
 # install.packages(c("readxl", "dplyr", "tidyr", "ggplot2", "stringr"))
 
 library(readxl)
@@ -53,7 +52,6 @@ read_birth_death_sheet <- function(sheet_name, type_label) {
   # Read sheet
   df_raw <- read_excel(birth_death_file, sheet = sheet_name)
   
-  # Force the first four columns to have standard names:
   # CODE = local area code, REGION = region name,
   # COUNT = number of births/deaths, YEAR = year
   if (ncol(df_raw) < 4) {
