@@ -94,4 +94,27 @@ Correlation between labour levels and business dynamics:
   - business **deaths increase strongly** when labour levels are higher  
   - net business change is **strongly negative when employment is higher**
 - Across regions overall:
-  - there is **no universal positive link** between empl
+  - there is **no universal positive link** between employment and net business change
+
+ ###  How to download and run the code
+  - 1.	Clone or download the repository
+o	Go to https://github.com/divineefe/IJC437-business-dynamics
+o	Click Code → Download ZIP (or clone using Git if preferred)
+2.	Install R packages
+In R/RStudio, install the required packages (only needed once):
+3.	install.packages(c("readxl", "dplyr", "tidyr", "ggplot2", "stringr"))
+4.	Open the project in RStudio
+o	Set the working directory to the project folder
+o	Ensure the ONS and Nomis Excel files are placed in the same directory as the script
+5.	Run the analysis script
+Open ijc437_business_births_deaths.R and run it from top to bottom.
+The script automatically:
+o	loads the data
+o	cleans and merges the datasets
+o	calculates business birth, death and net rates per 100,000 employed
+o	produces:
+	summary_table (average rates by region)
+	cor_results (correlations between labour levels and business dynamics)
+	time-series plots
+	regression output for Yorkshire
+
