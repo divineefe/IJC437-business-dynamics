@@ -1,4 +1,4 @@
-# IJC437 Data Visualisation Project  
+# IJC437 Intro to data science project
 ## Business Births, Deaths and Labour Market Dynamics in Yorkshire (2018–2023)
 
 ### Overview
